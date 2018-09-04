@@ -1,22 +1,35 @@
 var slider = {
+	/**
+	 * Function that initializes the other functions.
+	 *
+	 * @return {void}
+	 */
 	init: function () {
 		this.initializeVariables();
 		this.changeImg();
 	},
 
+	/**
+	 * Initializes variables.
+	 *
+	 * @return {void}
+	 */
 	initializeVariables: function () {
 		// Image List
-			this.counter = 0,
-			this.timeInterval = 3000; // in milli-secs
-			this.images = [];
+		this.counter = 0,
+		this.images = [];
 
 		this.images[0] = 'img/pic-1.png';
 		this.images[1] = 'img/pic-2.png';
 		this.images[2] = 'img/pic-3.png';
 	},
 
+	/**
+	 * Changes images source every 3 secs, to create an image slider.
+	 *
+	 * @return {void}
+	 */
 	changeImg: function () {
-		console.log( 'auto', slider.counter );
 		this.slideEl = document.querySelector( '.slide' );
 		this.slideEl.src = this.images[ this.counter ];
 		if ( this.counter < ( this.images.length - 1 ) ) {
