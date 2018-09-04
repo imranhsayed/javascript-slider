@@ -16,7 +16,7 @@ var slider = {
 	 */
 	initializeVariables: function () {
 		// Image List
-		this.counter = 0,
+		this.counter = 0;
 		this.images = [];
 
 		this.images[0] = 'img/pic-1.png';
