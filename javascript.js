@@ -34,9 +34,6 @@
 		 * @return {void}
 		 */
 		changeImg: function () {
-			const that = this;
-
-			console.log( that );
 			this.slideEl = document.querySelector( '.slide' );
 			this.slideEl.src = this.images[ this.counter ];
 			if ( this.counter < ( this.images.length - 1 ) ) {
